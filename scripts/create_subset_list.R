@@ -17,6 +17,7 @@ outputpath <- file.path(mainpath, "output")
 source(file.path(mainpath, "scripts/falls_freezing_questionnaire.R"))
 rm(list = setdiff(ls(), c("fog_falls_list", "mainpath", "datapath", "outputpath")))
 
+
 fog_count <- 1                  # minimum amount of fog needed in each patient for fog
 no_fog_count <- 0               # maximum amount of fog in control group allowed
 med_state <- "noON"             # use medication state ON, OFF, ON_and_OFF, noON (OFF & ON_and_OFF) or ALL for FoG subjects
@@ -116,7 +117,7 @@ consecutive_fog_data <- consecutive_fog_data %>%
   select(PATNO, sum_values, sort(names(.)[-c(1, which(names(.) == "sum_values"))]))
 
 # checking for medication status
-on_columns <- grep("_ON$", names(consecutive_fog_data))
+on_columns <- grep("_ON$", names(consecutive_fog_data)) 
 off_columns <- grep("_OFF$", names(consecutive_fog_data))
 
 consecutive_fog_data <- consecutive_fog_data %>%
