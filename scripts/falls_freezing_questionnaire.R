@@ -1,6 +1,7 @@
 # This script uses the "Determination of Freezing and Falls" from PPMI database to find participant IDs reporting Freezing. The file was downloaded 11/25
 # author: Ole Hausendorf
 # last changed: 11/25
+# needed PPMI data downloads: participant_status, mdrs_part_3, determination_freezing_falls_questionnaire
 
 #   - Why only 260 PATNOs of those two lists are identical?
 #       - fog_falls_list subjects because of last 12 months question

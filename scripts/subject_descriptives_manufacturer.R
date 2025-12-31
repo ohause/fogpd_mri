@@ -1,6 +1,8 @@
 # This script is made to check for manufacturer, TR and b-values of create_subset_list.R script. The file was downloaded 12/25.
 # author: Ole Hausendorf
 # last changed: 12/25
+# needed PPMI data downloads: scanner_type
+# needed datatype: final_dataset from create_subset_list.R
 
 
 # setup -------------------------------------------------------------------

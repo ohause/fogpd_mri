@@ -1,6 +1,6 @@
 # This script is build to create a patient list of the subset of the Parkinson's Disease (PD) PPMI dataset including Freezing of Gait (FoG) patients and non-FoG patients. Setup variables can be changed for intended purpose.
 # Author: Ole Hausendorf, last change 11/2025
-
+# needed PPMI data downloads: participant_status, dmri_baseline_scans, dmir_all_scans, mdrs_part_3, mdrs_part_2, determination_freezing_falls_questionnaire
 
 # setup
 
