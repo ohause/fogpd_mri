@@ -248,9 +248,10 @@ t.test(final_dataset$last_visit[final_dataset$matching == 0], final_dataset$last
 # saving data -------------------------------------------------------------
 
 write.csv(final_dataset, file.path(outputpath, "final_dataset.csv"))
+final_dataset_patno_sorted <- sort(final_dataset$PATNO)
 if (cnt_dti_scans == 1) {
-  writeLines(as.character(final_dataset$PATNO), con = file.path(outputpath, "subject_ids_bl_dwi_scan.txt"))
+  writeLines(as.character(final_dataset_patno_sorted), con = file.path(outputpath, "subject_ids_bl_dwi_scan.txt"))
 } else if (cnt_dti_scans == 2) {
-  writeLines(as.character(final_dataset$PATNO), con = file.path(outputpath, "subject_ids_two_dwi_scans.txt"))
+  writeLines(as.character(final_dataset_patno_sorted), con = file.path(outputpath, "subject_ids_two_dwi_scans.txt"))
 }
 
